@@ -13,6 +13,5 @@ ob = Bf(page.text, 'html.parser')
 
 # print(ob)
 
-output = ob.find('div', class_='num')
-
-print(output)
+tag = ob.find('strong', {'class': 'num'})
+print(tag.text)  # Output: 4-6
